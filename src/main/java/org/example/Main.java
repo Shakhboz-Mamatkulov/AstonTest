@@ -79,6 +79,31 @@ public class Main {
         System.out.println("Заполненный массив 12 задание;");
         printArray(array);
 
+        // Вызов триннадцатого метода
+        int n= 4; //размер массива
+        int [][] matrix = new int[n][n]; //двумерный целочисленный массив nXn
+        for (int i = 0; i < n; i++) {
+            matrix[i][i] = 1; //главная диагональ
+            matrix[i][n - i - 1] = 1; //остальная диагональ
+        }
+        printMatrix(matrix);
+
+        // Вызов четырннадцатого метода
+        int[] resultArray = createArray (5, 7); //вызов метода
+        System.out.println("Созданный массив:");
+        printArray(resultArray);
+        public.int [] createArray;
+        int len, int initialValue); {
+            int[] array = new int[len]; // массив длины
+        for (int i = 0; i < len; i++) {
+            array[i] = initialValue; // значение initialValue
+        }
+        return array; //возврат массива
+
+        }
+
+
+
     }
 
 
@@ -165,8 +190,24 @@ public static void printStringMultipleTimes(String text, int times) {
 }
 //11 метод такой же как в 10 задании
 //12 метод такой же как в 10 задании
+//13
+    public static void printMatrix(int[][] matrix) {
+        for (int[] row : matrix) {
+            for (int elem : row) {
+                System.out.print(elem + "");
+            }
+                System.out.println();
+        }
 
 
+    }
+//14
+public static void printArray(int[] array) {
+        for (int num : array) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
+}
 
 
 
