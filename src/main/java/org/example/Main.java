@@ -89,6 +89,14 @@ public class Main {
         printMatrix(matrix);
 
         // Вызов четырннадцатого метода
+        public static int[] generateArray(int len, int initialValue) {
+            int[] array = new int[len];
+            for (int i = 0; i < len; i++) {
+                array[i] = initialValue;
+            }
+            return array;
+        }
+
 
 
 
@@ -184,8 +192,8 @@ public class Main {
     }
 
     //11 метод такой же как в 10 задании
-//12 метод такой же как в 10 задании
-//13
+    //12 метод такой же как в 10 задании
+    //13
     public static void printMatrix(int[][] matrix) {
         for (int[] row : matrix) {
             for (int elem : row) {
@@ -195,9 +203,19 @@ public class Main {
         }
 
 
+
     }
 
     //14
+    Public static void brr(String[ args]) {
+        int[] result = generateArray(5, 10);
+        for (int value : result) {
+            System.out.println(value + "");
+        }
+    }
+
+
+
 
 
 
