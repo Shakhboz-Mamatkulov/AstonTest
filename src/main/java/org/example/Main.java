@@ -48,9 +48,9 @@ public class Main {
 
         for (int i = 0; i < array.length; i++) {
             if (array[i] == 0) {
-                array[i]  =1;
-            } else if(array[i] == 1) {
-                array [i] = 0;
+                array[i] = 1;
+            } else if (array[i] == 1) {
+                array[i] = 0;
             }
         }
         System.out.println("Измененный массив:");
@@ -72,16 +72,16 @@ public class Main {
         printArray(array);
 
         for (int i = 0; i < array.length; i++) {
-            if (array[i] < 6)  {
-                array[i] *=2; //умножением на 2 числа меньше 6
+            if (array[i] < 6) {
+                array[i] *= 2; //умножением на 2 числа меньше 6
             }
         }
         System.out.println("Заполненный массив 12 задание;");
         printArray(array);
 
         // Вызов триннадцатого метода
-        int n= 4; //размер массива
-        int [][] matrix = new int[n][n]; //двумерный целочисленный массив nXn
+        int n = 4; //размер массива
+        int[][] matrix = new int[n][n]; //двумерный целочисленный массив nXn
         for (int i = 0; i < n; i++) {
             matrix[i][i] = 1; //главная диагональ
             matrix[i][n - i - 1] = 1; //остальная диагональ
@@ -89,34 +89,20 @@ public class Main {
         printMatrix(matrix);
 
         // Вызов четырннадцатого метода
-        int[] resultArray = createArray (5, 7); //вызов метода
-        System.out.println("Созданный массив:");
-        printArray(resultArray);
-        public.int [] createArray;
-        int len, int initialValue); {
-            int[] array = new int[len]; // массив длины
-        for (int i = 0; i < len; i++) {
-            array[i] = initialValue; // значение initialValue
-        }
-        return array; //возврат массива
-
-        }
 
 
 
     }
 
 
-
-
-
-//1
+    //1
     public static void printThreeWords() {
         System.out.println("orange");
         System.out.println("banana");
         System.out.println("apple");
     }
-//2
+
+    //2
     public static void checkSumSign() {
         int a = 15;
         int b = -100;
@@ -129,18 +115,20 @@ public class Main {
             System.out.println("Сумма отрицательная");
         }
     }
-//3
-public static void  printColor(int value) {
-        if (value <=0) {
+
+    //3
+    public static void printColor(int value) {
+        if (value <= 0) {
             System.out.println("Красный");
-        } else if (value<=100) {
+        } else if (value <= 100) {
             System.out.println("Желтый");
         } else {
             System.out.println("Зеленый");
         }
     }
-//4
-public  static void compareNumbers() {
+
+    //4
+    public static void compareNumbers() {
         int a = 10;
         int b = 20;
 
@@ -149,26 +137,30 @@ public  static void compareNumbers() {
         } else {
             System.out.println("a < b");
         }
-}
-//5
-public static boolean isSumInRange(int a, int b) {
+    }
+
+    //5
+    public static boolean isSumInRange(int a, int b) {
         int sum = a + b;
-        return sum >=10 && sum <=20;
-}
-//6
-public static void checkNumberSign(int number) {
-        if (number >=0) {
+        return sum >= 10 && sum <= 20;
+    }
+
+    //6
+    public static void checkNumberSign(int number) {
+        if (number >= 0) {
             System.out.println("Число положительное");
         } else {
             System.out.println("Число отрицательное");
         }
-}
-//7
+    }
+
+    //7
     public static boolean isNegative(int number) {
         return number < 0;
     }
-//8
-public static void printStringMultipleTimes(String text, int times) {
+
+    //8
+    public static void printStringMultipleTimes(String text, int times) {
         if (times <= 0) {
             System.out.println("Указано некорректное кол-во повторений");
             return;
@@ -176,19 +168,22 @@ public static void printStringMultipleTimes(String text, int times) {
         for (int i = 0; i < times; i++) {
             System.out.println(text);
         }
-}
-//9
+    }
+
+    //9
     public static boolean isLeapYear(int year) {
         return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
     }
-//10
+
+    //10
     public static void printArray(int[] array) {
         for (int num : array) {
             System.out.print(num + " ");
         }
         System.out.println();
-}
-//11 метод такой же как в 10 задании
+    }
+
+    //11 метод такой же как в 10 задании
 //12 метод такой же как в 10 задании
 //13
     public static void printMatrix(int[][] matrix) {
@@ -196,27 +191,13 @@ public static void printStringMultipleTimes(String text, int times) {
             for (int elem : row) {
                 System.out.print(elem + "");
             }
-                System.out.println();
+            System.out.println();
         }
 
 
     }
-//14
-public static void printArray(int[] array) {
-        for (int num : array) {
-            System.out.print(num + " ");
-        }
-        System.out.println();
-}
 
-
-
-
-
-
-
-
-
+    //14
 
 
 
