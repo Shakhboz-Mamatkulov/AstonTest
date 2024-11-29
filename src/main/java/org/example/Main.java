@@ -87,19 +87,18 @@ public class Main {
             matrix[i][n - i - 1] = 1; //остальная диагональ
         }
         printMatrix(matrix);
+        array = generateArray(100, 1);
+        System.out.println("Заполненный массив (100 элементов):");
+        printArray(array);
+    }
 
-        // Вызов четырннадцатого метода
-        public static int[] generateArray(int len, int initialValue) {
-            int[] array = new int[len];
-            for (int i = 0; i < len; i++) {
-                array[i] = initialValue;
-            }
-            return array;
+    // Вызов четырннадцатого метода
+    public static int[] generateArray(int len, int initialValue) {
+        int[] array = new int[len];
+        for (int i = 0; i < len; i++) {
+            array[i] = initialValue;
         }
-
-
-
-
+        return array;
     }
 
 
@@ -203,20 +202,6 @@ public class Main {
         }
 
 
-
     }
-
-    //14
-    Public static void brr(String[ args]) {
-        int[] result = generateArray(5, 10);
-        for (int value : result) {
-            System.out.println(value + "");
-        }
-    }
-
-
-
-
-
 
 }
