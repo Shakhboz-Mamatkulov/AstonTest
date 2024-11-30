@@ -16,9 +16,9 @@ public class Main {
         }
         //Задание 3
         Park park = new Park();
-        park.addAttraction("Горки", "10-20", 666);
-        park.addAttraction("Качели", "10-20", 555);
-        park.addAttraction("Падение воздушное", "10-20", 777);
+        park.addAttraction("Горки", "10-20", 4);
+        park.addAttraction("Качели", "10-20", 4);
+        park.addAttraction("Падение воздушное", "10-20", 5);
 
         park.displayAttractions();
     }
@@ -57,11 +57,11 @@ class Park {
     private int count;
 
     public Park() {
-        attractions = new Attraction[10]; //max 5 аттракционов
+        attractions = new Attraction[3]; //max 3 аттракциона
     }
 
     public void addAttraction(String name, String workingHours, int cost) {
-        if (cost < attractions.length) {
+        if (cost >= attractions.length) {
             attractions[count++] = new Attraction(name, workingHours, cost);
         } else {
             System.out.println("невозможно добавить больше аттракционов");
@@ -87,8 +87,8 @@ class Park {
         }
 
         public void displayInfo() {
-            System.out.println("Attraction name:" + name);
-            System.out.println("Working Hours:" + workingHours);
+            System.out.println("Название аттракциона:" + name);
+            System.out.println("Часы работы:" + workingHours);
             System.out.println("Тугрики:" + cost );
             System.out.println("-------------------");
         }
