@@ -13,7 +13,7 @@ public class BaseTest {
 
     @BeforeEach
     public void setUp() {
-        System.setProperty("webdriver.chrome.driver", "C:\\drivers\\chromedriver-win64.exe"); // поставил путь к chromedriver на своем пк
+        System.setProperty("webdriver.chrome.driver", "C:\\drivers\\chromedriver-win64/chromedriver.exe"); // поставил путь к chromedriver на своем пк
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
         options.addArguments("--start-maximized");
